@@ -1,0 +1,82 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .logoContainer {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+  }
+  
+  .logoText {
+    color: #00009b;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .subtitle {
+    color: white;
+    font-size: 1rem;
+    background-color: red;
+    padding: 2px ;
+    border-radius: 5px;
+    margin: 0 15px ;
+    font-weight: bold;
+  }
+  
+  .tagline {
+    font-size: 0.6rem;
+    color: #666;
+    text-align: center;
+  }
+  .downArrow {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    color: #666; // Adjust the color to match your design
+  }
+  
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navList {
+    display: flex;
+    list-style-type: none;
+    margin-left: 20px;
+    padding: 0;
+    gap: 20px;
+  }
+  
+  .navItem {
+    font-size: 1rem;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .ticketButton {
+    margin-left: 20px;
+    padding: 20px 16px;
+    background-color: #2a2f98;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .menuIcon {
+    margin-left: 80px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+  }
+  
+  

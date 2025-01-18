@@ -1,0 +1,54 @@
+.erp-content-container {
+    background-color: white;
+    padding:200px 20px 10px;
+    margin-top: -30px;
+  }
+  
+  .erp-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .erp-image {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .erp-image .image {
+    width: 100%;
+    max-width: 300px; /* Set the max-width to control the size of the image */
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .erp-text {
+    flex: 2;
+  }
+  
+  .erp-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .erp-text p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  
+  .read-more-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #0056b3;
+  }
+  

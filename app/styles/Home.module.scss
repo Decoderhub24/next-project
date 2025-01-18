@@ -79,4 +79,55 @@
     color: black;
   }
   
+  //tabsection
+  .container {
+    display: flex;
+    text-align: center;
+    width: 80%;
+    height: 200px;
+    margin-left: 10%;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100%;
+    margin-bottom: 2rem; 
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+  }
+  
+  .tab {
+    
+    text-align: center;
+    cursor: pointer;
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+    border-right: 1px solid rgb(206, 205, 205);
+  }
+  
+  .activeTab {
+    background-color: #3d76d4; /* Blue background for active tabs */
+    color: white;
+    
+  }
+  
+  .tabNumber {
+    font-size: 8.25rem; /* Text size */
+    font-weight: bold;
+    opacity: 0.4;
+    position: absolute;
+    margin-left:5%;
+  }
+  
+  .tabLabel {
+    color: black; 
+    margin-top: 30%;
+    font-size: 1.5rem;
+  }
+  
+  .activeLabel {
+    color: white;
+  }
   

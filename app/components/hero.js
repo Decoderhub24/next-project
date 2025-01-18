@@ -1,40 +1,20 @@
-import Image from "next/image";
+import React from 'react';
 
-const HeroSection = () => {
+const Hero = () => {
   return (
-    <section className="hero-section bg-gray-100">
-      <div className="relative flex flex-col items-center text-center lg:text-left lg:flex-row">
-        {/* Background Image */}
-        <div className="w-full lg:w-1/2 relative">
-          <Image
-            src="/image.png" // Replace with your image path
-            alt="Web-Based Accounting and Inventory Management"
-            layout="fill"
-            objectFit="cover"
-            className="absolute z-0"
-          />
-        </div>
-
-        {/* Content */}
-        <div className="flex flex-col z-10 p-10 bg-white shadow-lg rounded-lg lg:w-1/2">
-          <h1 className="text-4xl font-bold text-gray-800">
-            Web-Based Accounting and Inventory Management Software
-          </h1>
-          <p className="text-gray-600 mt-4">
-            Now do your accounting from anywhere, anytime, and on any device—Desktop, Mobile, and Tab.
-          </p>
-          <div className="mt-6">
-            <a
-              href="#"
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition"
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
+    <section
+      className="relative h-screen bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/bg1.png')" }}
+    >
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
+        <h1 className="text-4xl font-bold mb-4">Welcome to Our Store</h1>
+        <p className="text-lg mb-6">Find the best shoes and sneakers here!</p>
+        <button className="px-6 py-3 text-white bg-red-500 hover:bg-red-600 rounded-lg">
+          Shop Now
+        </button>
       </div>
     </section>
   );
 };
 
-export default HeroSection;
+export default Hero;

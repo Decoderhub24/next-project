@@ -1,4 +1,5 @@
 import styles from '../styles/Middlesection.module.scss';
+import supportStyles from '../styles/Supportsection.module.scss';
 
 const MiddleSection = () => {
   return (
@@ -67,10 +68,10 @@ const MiddleSection = () => {
           </div>
           <p>
             We are a premier business software solution provider in Nepal with
-            its corporate office found in Kalimati, Kathmandu (Nepal).
+            its corporate office located in Kalimati, Kathmandu (Nepal).
           </p>
           <p>
-            Promoted by professionals with more than a decades experience in
+            Promoted by professionals with more than a decade of experience in
             accounting, management, and information technology, the company
             specializes in supplying application software as well as
             client-specific customized solutions. We offer our expertise to
@@ -96,7 +97,7 @@ const MiddleSection = () => {
             alt="Image 2"
             className={styles.image}
           />
-          <p>20+ Years of Experiencs</p>
+          <p>20+ Years of Experience</p>
         </div>
         <div className={styles.imageTextItem}>
           <img
@@ -124,7 +125,6 @@ const MiddleSection = () => {
         </div>
       </div>
 
-      
       {/* Support Service Section */}
       <div className={styles.supportServiceSection}>
         <div className={styles.supportServiceContainer}>
@@ -138,15 +138,90 @@ const MiddleSection = () => {
             Partners and Team across Nepal.
           </p>
           <p>
-            Our team is up and ready to offer professional support and solutions
-            to ease your operation.
+            Our team is ready to offer professional support and solutions to
+            ease your operation.
           </p>
         </div>
       </div>
-    
-    </section>
 
-    
+      {/* Additional Support Section */}
+      <div className={supportStyles.supportSection}>
+        
+        <div className={supportStyles.servicesContainer}>
+          <div className={supportStyles.serviceItem}
+          style={{ marginTop: "110px"}}
+          >
+            <div
+              className={supportStyles.iconWrapper}
+              style={{ borderColor: "#FF6B6B" }}
+            >
+              <img
+                src="https://hitechnepal.com/images/icons/live-chat-support-new.svg"
+                alt="Live Chat Support"
+                className={supportStyles.icon}
+              />
+            </div>
+            <h3>Live Chat Support</h3>
+          </div>
+          <div className={supportStyles.serviceItem}
+          style={{ marginTop: "50px"}}>
+            <div
+              className={supportStyles.iconWrapper}
+              style={{ borderColor: "#8C52FF" }}
+            >
+              <img
+                src="https://hitechnepal.com/images/icons/onsite-support.svg"
+                alt="Onsite Support"
+                className={supportStyles.icon}
+              />
+            </div>
+            <h3>Onsite Support</h3>
+          </div>
+          <div className={supportStyles.serviceItem}
+          style={{ marginTop: "-10px"}}>
+            <div
+              className={supportStyles.iconWrapper}
+              style={{ borderColor: "#5EC9DB" }}
+            >
+              <img
+                src="https://hitechnepal.com/images/icons/crm.svg"
+                alt="Industry-specific Implementations"
+                className={supportStyles.icon}
+              />
+            </div>
+            <h3>Industry-specific Implementations</h3>
+          </div>
+          <div className={supportStyles.serviceItem}
+          style={{ marginTop: "-60px"}}>
+            <div
+              className={supportStyles.iconWrapper}
+              style={{ borderColor: "#A044FA" }}
+            >
+              <img
+                src="https://hitechnepal.com/images/icons/software-training.svg"
+                alt="Software Training"
+                className={supportStyles.icon}
+              />
+            </div>
+            <h3>Software Training</h3>
+          </div>
+        </div>
+        <button className={supportStyles.learnMoreButton}>
+          Learn more about us
+        </button>
+      </div>
+
+      <div className={supportStyles.backgroundContainer}>
+      <div className={supportStyles.overlay}>
+        <h1>Want to learn more about what <span className={supportStyles.wedo}>we do?</span></h1>
+        <p>Send us a message or a query about any of our services.</p>
+        <button className={supportStyles.getInTouchButton}>
+          Get in Touch
+          <span className={supportStyles.arrow}>&rarr;</span>
+        </button>
+      </div>
+    </div>
+    </section>
   );
 };
 

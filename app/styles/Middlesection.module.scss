@@ -144,39 +144,50 @@ background-color: black;
   line-height: 1.6;
 }
 .readMoreButton {
-  background-color:#2d2f91;
-  color: white;
-  border:  solid #2d2f91;
-  padding: 10px 30px;
-  margin-bottom: 30px;
-  border-radius: 225px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition:  0.5s ease;
+  display: inline-block;
+  padding: .4rem 1rem;
+  margin: 10px ;
+  border: 2px solid #2d2f91;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
   position: relative;
   overflow: hidden;
-}
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d2f91;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  &:hover {
+    color:black;
+    &:before {
+      width: 100%;
+    }
+  }}
 
-.readMoreButton::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  transition: left 0.6s ease;
-}
-
-.readMoreButton:hover {
-  color: black;
-  background-color: white;
-}
-
-.readMoreButton:hover::before {
-  left: 100%;
-}
 
 .additionalContent {
   display: flex;

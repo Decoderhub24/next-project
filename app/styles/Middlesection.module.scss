@@ -1,0 +1,243 @@
+.container {
+  background-color: #fff;
+  padding: 4rem 0;
+  height: 1000px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1350px;
+}
+
+/* Left Section */
+.leftSection {
+  position: relative;
+  flex: 1;
+  margin: 50px;
+}
+
+.backgroundImage1 {
+  position: absolute;
+  top: -100px;
+  left: 90px;
+  bottom: 100px;
+  width: 390px;
+  
+}
+.backgroundImage2 {
+  position: absolute;
+  width: 500px;
+  left: 35px;
+  top: -100px;
+  z-index: 0;
+  bottom: 100px;
+  
+}
+
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+.image1 {
+  z-index: 0;
+}
+
+.image2 {
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+
+/* Floating Cards */
+.floatingCard {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  position: absolute;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 100;
+
+}
+.floatingCard:hover{
+background-color: black;
+}
+
+.floatingCard img {
+  width: 170px;
+  height: 130px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.floatingCard h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  bottom: 50px;
+  left: 20px;
+}
+
+/* Floating Card Positions */
+.strengthCard {
+  top: -8rem;
+  left: -3rem;
+}
+
+.expertiseCard {
+  top: 7rem;
+  left: -2rem;
+  width: 150px;
+  height: 130px;
+}
+
+.goalsCard {
+ width: 170px;
+ bottom: -7rem;
+ right: -1rem;
+ 
+}
+
+
+/* Right Section */
+.rightSection {
+  flex: 1;
+  padding: 0 2rem;
+  margin-left: 40px;
+  border-bottom: 0.15rem solid rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  display: block;
+  color: white;
+  background-color: #0056b3;
+  width: 90px;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #333;
+  margin: 0;
+}
+
+.rightSection p {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.readMoreButton {
+  background-color:#2d2f91;
+  color: white;
+  border:  solid #2d2f91;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  border-radius: 225px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:  0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.readMoreButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: left 0.6s ease;
+}
+
+.readMoreButton:hover {
+  color: black;
+  background-color: white;
+}
+
+.readMoreButton:hover::before {
+  left: 100%;
+}
+
+.additionalContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 80px;
+  justify-self: center;
+  gap: 50px;
+  background-color: white;
+
+}
+
+.imageTextItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.imageTextItem img {
+  width: 80px;
+  max-width: 250px; /* Adjust based on your design */
+  height: auto;
+  border-radius: 8px;
+  
+}
+
+.imageTextItem p {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+  width: 200px;
+}
+
+.supportServiceSection {
+  padding: 70px 20px;
+  background-color: white;
+}
+
+.supportServiceContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.supportServiceSection h2 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 10px;
+  border-bottom: 5px solid transparent;
+  background-image: linear-gradient(to right, blue 50%, red 50%);
+  background-position: bottom;
+  background-size: 140px 2px; 
+  background-repeat: no-repeat;
+  
+}
+
+.supportServiceSection p {
+  font-size: 1.1rem;
+  color: rgb(80, 79, 79);
+  
+}

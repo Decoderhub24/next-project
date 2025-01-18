@@ -83,17 +83,17 @@
   .container {
     display: flex;
     text-align: center;
-    width: 80%;
-    height: 200px;
-    margin-left: 10%;
+    width: 90%;
+    height: 180px;
+    margin-left: 5%;
     justify-content: space-around;
     background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 100%;
     margin-bottom: 2rem; 
     border-bottom-left-radius: 20px; 
     border-bottom-right-radius: 20px; 
+    border-bottom:3px solid #00009b;
   }
   
   .tab {
@@ -108,26 +108,51 @@
   }
   
   .activeTab {
-    background-color: #3d76d4; /* Blue background for active tabs */
+    background-color: #0c0c79; /* Blue background for active tabs */
     color: white;
+    position: relative; 
     
   }
+  .activeTab::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black; /* Match activeTab background color */
+  }
+  
   
   .tabNumber {
     font-size: 8.25rem; /* Text size */
     font-weight: bold;
-    opacity: 0.4;
+    opacity: 0.5;
     position: absolute;
-    margin-left:5%;
+    right: 40;
   }
   
   .tabLabel {
     color: black; 
-    margin-top: 30%;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    
   }
   
   .activeLabel {
     color: white;
+  }
+  .tabImage {
+    width: 60px;
+    height: 60px;
+    margin: 20px 100px 10px;
+    
+  }
+  .tab:last-child {
+    border-bottom-right-radius: 15px; 
+  }
+  .tab:first-child {
+    border-bottom-left-radius: 15px; 
   }
   

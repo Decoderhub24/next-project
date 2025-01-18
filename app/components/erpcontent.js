@@ -12,11 +12,11 @@ export default function ERPContent() {
         </div>
         <div className={styles['erp-text']}>
           <h2>ERP </h2>
-          <p>Enterprise resource planning (ERP) is an integrated management of core business processes, often in real time and mediated by software and technology.
+          <p>Enterprise resource planning (ERP) is an integrated management of core business processes, often in real time and mediated by software and technology.</p>
 
-Hitech IMS is a modular Cloud based ERP software with multi-branch and complete Enterprise Solution management.
+<p>Hitech IMS is a modular Cloud based ERP software with multi-branch and complete Enterprise Solution management.</p>
 
-Track and manage your business through our ERP solution where you can easily manage your raw materials, productions, administration, finances and accounts, purchases and imports, sales and budget, customer care and reporting.
+<p>Track and manage your business through our ERP solution where you can easily manage your raw materials, productions, administration, finances and accounts, purchases and imports, sales and budget, customer care and reporting.
 
 </p>
           <button className={styles['read-more-btn']}>Read More</button>

@@ -1,57 +1,108 @@
 .erp-content-container {
-    background-color: white;
-    padding:200px 20px 10px;
-    margin-top: -30px;
+    padding:100px 20px 100px;
+    margin-top: -30px ;
+    width: 100%;
+    background-image: url('https://hitechnepal.com/images/portfolio_bg.png');
+    background-color: #f9f9f9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
   .erp-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 100px;
+    margin: 20px 120px;
+    width: 90%;
+    gap: 200px;
+    
   }
   
   .erp-image {
     flex: 1;
     padding-right: 20px;
-    
+    width: 100%;
     
   }
   
   .erp-image .image {
-    width: 100%;
-    height: 100%;
+    width: 500;
+    height: 350;
+    bottom: -75%;
+    left: 200px;
     border-radius: 8px;
+    position:absolute;
   }
   
   .erp-text {
     flex: 2;
     width: 50%;
+    margin:20px  80px;
+    
   }
   
   .erp-text h2 {
     font-size: 2rem;
-    font-weight: bold;
+    color: black;
+    margin:  30px 30px ;
+    width: 80%; 
+    border-bottom: 5px solid transparent;
+    background-image: linear-gradient(to right, blue 50%, red 50%);
+    background-position:bottom-right;
+    background-size: 140px 2px; 
+    background-repeat: no-repeat;
+
+    
   }
   
   .erp-text p {
     font-size: 1rem;
     color: #555;
-    margin-bottom: 16px;
+    margin: 10px 30px;
+    width: 90%;
+
+  }.read-more-btn, .contact-btn {
+    padding: 7px 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 1rem;
+    background-color: #2d2f91;
+    border: 2px solid #2d2f91;
+    border-radius: 225px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s; 
   }
+  
+  .read-more-btn:before, .contact-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s ease;
+  }
+  
+  .read-more-btn:hover, .contact-btn:hover {
+    color: black;
+  background-color: white;
+  }
+  
+  .read-more-btn:hover:before, .contact-btn:hover:before {
+    left: 100%; 
+  }
+  .read-more-btn:hover:before, .contact-btn:hover:before {
+    left: 0; 
+  }
+  
   
   .read-more-btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.6s ease,  0.6s ease;
   }
   
-  .read-more-btn:hover {
-    background-color: #0056b3;
+  .contact-btn {
+    transition: background-color 0.6s ease,  0.6s ease;
   }
   

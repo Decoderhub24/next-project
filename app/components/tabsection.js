@@ -14,6 +14,14 @@ export default function TabSection() {
     setSelectedTab(index);
   };
 
+  // Data for tabs with images, labels, and numbers
+  const tabs = [
+    { id: 1, label: 'ERP', image: 'https://hitechnepal.com/images/icons/001-3d-modeling.svg', number: '01' },
+    { id: 2, label: 'Application Software', image: 'https://hitechnepal.com/images/icons/001-application.svg', number: '02' },
+    { id: 3, label: 'Customized Software Development', image: 'https://hitechnepal.com/images/icons/001-computer.svg',number: '03' },
+    { id: 4, label: 'E-commerce', image: 'https://hitechnepal.com/images/icons/002-shopping-bag.svg', number: '04' },
+  ];
+
   // Dynamically render the content based on the selected tab
   const renderContent = () => {
     switch (selectedTab) {
@@ -34,13 +42,20 @@ export default function TabSection() {
     <div>
       {/* Tab Navigation */}
       <div className={styles.container}>
-        {[{ id: 1, label: 'ERP' }, { id: 2, label: 'Application Software' }, { id: 3, label: 'Customized Software Development' }, { id: 4, label: 'E-commerce' }].map((tab) => (
+        {tabs.map((tab) => (
           <div
             key={tab.id}
             className={`${styles.tab} ${selectedTab === tab.id ? styles.activeTab : ''}`}
             onClick={() => handleTabClick(tab.id)}
           >
-            <h2 className={styles.tabNumber}>{`0${tab.id}`}</h2>
+            <p className={`${styles.tabNumber} ${selectedTab === tab.id ? styles.activeLabel : ''}`}
+            >
+              {tab.number}</p>
+            <img
+              src={tab.image}
+              alt={tab.label}
+              className={styles.tabImage}
+            />
             <p
               className={`${styles.tabLabel} ${selectedTab === tab.id ? styles.activeLabel : ''}`}
             >

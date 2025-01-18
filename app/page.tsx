@@ -1,6 +1,7 @@
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import Tabsection from './components/tabsection'
+import Middlesection from './components/middlesection'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Tabsection />
+      <Middlesection />
 
     </div>
   );

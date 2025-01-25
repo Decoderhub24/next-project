@@ -1,0 +1,107 @@
+.cardContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+    position: relative;
+    
+  }
+  
+  .card {
+    width: 360px;
+    height: 420px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cardHeader {
+    position: relative;
+    background-color: #2d2f91;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
+    height: 120px;
+    z-index: 1;
+    
+  }
+  
+  .cardLogo {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+   
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    
+  }
+  
+  .cardContent {
+    padding: 20px;
+  }
+  
+  .cardTitle {
+    font-size: 18px;
+    color: #3e4095;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .cardDescription {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .cardActions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+    width: 100%;
+}
+
+  
+  .readMore {
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #2d2f91;
+    border: 2px solid #2d2f91;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .requestDemo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #f73859;
+    border-color: #f73859;
+    color: #fff;
+  }
+  .readMore svg, .requestDemo svg {
+    margin-right: 8px; 
+    height: 15px;
+    width: 15px;
+}
+  

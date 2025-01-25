@@ -1,5 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookOpen, faListAlt } from "@fortawesome/free-solid-svg-icons";
+
 import styles from '../styles/Middlesection.module.scss';
 import supportStyles from '../styles/Supportsection.module.scss';
+import productstyles from '../styles/Ourproducts.module.scss';
+import cardStyles from '../styles/Cards.module.scss';
+
 
 const MiddleSection = () => {
   return (
@@ -221,6 +227,182 @@ const MiddleSection = () => {
         </button>
       </div>
     </div>
+    
+
+    <div className={productstyles.ourProductsContainer}>
+      {/* Background Image */}
+      <div className={productstyles.overlay}></div>
+
+      {/* Content Section */}
+      <div className={productstyles.content}>
+        {/* Left Section */}
+        <div className={productstyles.leftSection}>
+          <h1 className={productstyles.title}>
+            Our <h2>Products</h2>
+          </h1>
+          <div className={productstyles.borderBottom}></div>
+        </div>
+
+        {/* Center Section */}
+        <div className={productstyles.centerSection}>
+          <p>
+            These applications have powerful features to take care of all
+            requirements of Dealers, Distributors, Retailers, Departmental
+            Stores, Corporate House, Restaurant, Couriers, Transport, Service
+            Industry as well as Complex Manufacturing Industry including all
+            types of medium and small business segment.
+          </p>
+        </div>
+
+        {/* Right Section */}
+        <div className={productstyles.rightSection}>
+          <button className={productstyles.seeAllButton}>
+            See All Products
+          </button>
+        </div>
+      </div>
+    
+
+ 
+  {/* For Card Section */}
+<div className={cardStyles.cardContainer}>
+  {/* Card 1 */}
+  <div className={cardStyles.card}>
+    <div className={cardStyles.cardHeader}>
+      <img
+        src="https://hitechnepal.com/images/swastik-logo-new.png"
+        alt="Logo"
+        className={cardStyles.cardLogo}
+      />
+    </div>
+    <div className={cardStyles.cardContent}>
+      <h3 className={cardStyles.cardTitle}>
+        SWASTIK BUSINESS ACCOUNTING SOFTWARE
+      </h3>
+      <p className={cardStyles.cardDescription}>
+        Not just an accounting software, your complete business manager
+      </p>
+      <div className={cardStyles.cardActions}>
+            <button className={cardStyles.readMore}>
+              <FontAwesomeIcon
+                icon={faBookOpen}
+                style={{ marginRight: "8px" }}
+              />
+              Read More
+            </button>
+            <button className={cardStyles.requestDemo}>
+              <FontAwesomeIcon
+                icon={faListAlt}
+                style={{ marginRight: "8px" }}
+              />
+              Request a Demo
+            </button>
+          </div>
+    </div>
+  </div>
+
+  <div className={cardStyles.card}>
+    <div className={cardStyles.cardHeader}>
+      <img
+        src="https://hitechnepal.com/images/swastik-logo-new.png"
+        alt="Logo"
+        className={cardStyles.cardLogo}
+      />
+    </div>
+    <div className={cardStyles.cardContent}>
+      <h3 className={cardStyles.cardTitle}>SWASTIK BUSINESS ACCOUNTING SOFTWARE</h3>
+      <p className={cardStyles.cardDescription}>
+        A complete solution for inventory and stock management
+      </p>
+      <div className={cardStyles.cardActions}>
+            <button className={cardStyles.readMore}>
+              <FontAwesomeIcon
+                icon={faBookOpen}
+                style={{ marginRight: "8px" }}
+              />
+              Read More
+            </button>
+            <button className={cardStyles.requestDemo}>
+              <FontAwesomeIcon
+                icon={faListAlt}
+                style={{ marginRight: "8px" }}
+              />
+              Request a Demo
+            </button>
+          </div>
+    </div>
+  </div>
+
+  {/* Card 2 */}
+  <div className={cardStyles.card}>
+    <div className={cardStyles.cardHeader}>
+      <img
+        src="https://hitechnepal.com/images/swastik-restaurant-erp-logo.png"
+        alt="Logo"
+        className={cardStyles.cardLogo}
+      />
+    </div>
+    <div className={cardStyles.cardContent}>
+      <h3 className={cardStyles.cardTitle}>SWASTIK RESTAURANT ERP</h3>
+      <p className={cardStyles.cardDescription}>
+        Multi Module – Complete Restaurant POS and Inventory Solution
+      </p>
+      <div className={cardStyles.cardActions}>
+            <button className={cardStyles.readMore}>
+              <FontAwesomeIcon
+                icon={faBookOpen}
+                style={{ marginRight: "8px" }}
+              />
+              Read More
+            </button>
+            <button className={cardStyles.requestDemo}>
+              <FontAwesomeIcon
+                icon={faListAlt}
+                style={{ marginRight: "8px" }}
+              />
+              Request a Demo
+            </button>
+          </div>
+    </div>
+  </div>
+
+  {/* Card 3 */}
+  <div className={cardStyles.card}>
+    <div className={cardStyles.cardHeader}>
+      <img
+        src="https://hitechnepal.com/images/partners/avocare-logo-new.png"
+        alt="Logo"
+        className={cardStyles.cardLogo}
+      />
+    </div>
+    <div className={cardStyles.cardContent}>
+      <h3 className={cardStyles.cardTitle}>SWASTIK INVENTORY SYSTEM</h3>
+      <p className={cardStyles.cardDescription}>
+        A complete solution for inventory and stock management
+      </p>
+      <div className={cardStyles.cardActions}>
+            <button className={cardStyles.readMore}>
+              <FontAwesomeIcon
+                icon={faBookOpen}
+                style={{ marginRight: "8px" }}
+              />
+              Read More
+            </button>
+            <button className={cardStyles.requestDemo}>
+              <FontAwesomeIcon
+                icon={faListAlt}
+                style={{ marginRight: "8px" }}
+              />
+              Request a Demo
+            </button>
+          </div>
+    </div>
+  </div>
+</div>
+
+</div>
+    
+    
     </section>
   );
 };

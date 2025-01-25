@@ -1,0 +1,33 @@
+.aboutpage{
+    font-family: Arial, sans-serif;
+    margin-top: 7%;
+}
+  .imagesection{
+    background-image: url("https://hitechnepal.com/images/austin-distel-wD1LRb9OeEo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    height: 40vh;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    }
+    .text{
+        position: absolute;
+        color: white;
+        z-index: 2;
+        top: 25%;
+        left: 40%;
+    }
+    .text h1{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .text h2,.text span{
+        text-align: center;
+        font-size: 17px;
+    }
+   
+
+  

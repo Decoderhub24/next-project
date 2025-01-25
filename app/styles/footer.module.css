@@ -1,0 +1,141 @@
+.FooterSection {
+  background-color: #f4f8fc;
+  padding: 0;
+  text-align: center;
+}
+
+.footerSectionContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Scoped h2 styles */
+.footerSectionContainer h2 {
+  font-size: 50px;
+  color: black;
+  margin-bottom: 10px;
+  border-bottom: 5px solid transparent;
+  background-image: linear-gradient(to right, blue 50%, red 50%);
+  background-position: bottom;
+  background-size: 140px 2px; 
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 30px;
+}
+
+.logoImage {
+  width: 150px;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+  padding: 1rem;
+}
+
+.logoImage2 {
+  width: 200px;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+  margin-top: 30%;
+}
+
+/* Scoped styles for the card image section */
+.container {
+  display: flex;
+  height: 70vh;
+  width: 100%;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+  background-color:black;
+  overflow: hidden;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  transition: transform 0.8s ease, filter 1s ease;
+  overflow: hidden; 
+}
+.section:hover .icon {
+  filter: brightness(1) invert(0); 
+}
+.section:hover {
+  transform: scale(1.03); 
+  filter: brightness(0.8); 
+  overflow: hidden;
+}
+
+
+.section:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.content {
+  text-align: left;
+  max-width: 400px;
+  color: white;
+  margin-left: 20%;
+  
+  
+}
+.content2 {
+  position: relative;
+  text-align: left;
+  max-width: 400px;
+  color: white;
+  margin-right: 25%;
+  
+  
+}
+
+.icon {
+  height: 100px;
+  width: 70px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.5s ease;
+}
+
+.container h2 {
+  font-size: 35px;
+  font-weight: normal;
+  margin: 0 0 10px;
+  width: 350px;
+  letter-spacing: 3px;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.link {
+  display: inline-block;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+ 
+}
+
+.link:hover {
+  color: #007bff;
+}

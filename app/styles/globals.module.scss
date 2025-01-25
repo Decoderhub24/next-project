@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full height of the viewport */
+}
+.MiddleSection {
+  flex-grow: 1; /* Allows the middle section to expand */
+}
+
+.FooterSection {
+  margin-top: auto; /* Pushes the footer to the bottom */
+}

@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       className="relative h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/bg1.png')" }}
+      style={{ backgroundImage: "url('/images/bg1.png')", marginTop:"7%"}}
     >
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
         <h1 className="text-4xl font-bold mb-4">Welcome to Our Store</h1>

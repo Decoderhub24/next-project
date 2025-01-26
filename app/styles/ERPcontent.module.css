@@ -1,107 +1,107 @@
 .erp-content-container {
-    padding:100px 20px 100px;
-    margin-top: -30px ;
-    width: 100%;
-    background-image: url('https://hitechnepal.com/images/portfolio_bg.png');
-    background-color: #f9f9f9;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .erp-content {
-    display: flex;
-    margin: 20px 120px;
-    width: 90%;
-    gap: 200px;
-    
-  }
-  
-  .erp-image {
-    flex: 1;
-    padding-right: 20px;
-    width: 100%;
-    
-  }
-  
-  .erp-image .image {
-    width: 500;
-    height: 350;
-    bottom: -75%;
-    left: 200px;
-    border-radius: 8px;
-    position:absolute;
-  }
-  
-  .erp-text {
-    flex: 2;
-    width: 50%;
-    margin:20px  80px;
-    
-  }
-  
-  .erp-text h2 {
-    font-size: 2rem;
-    color: black;
-    margin:  30px 30px ;
-    width: 80%; 
-    border-bottom: 5px solid transparent;
-    background-image: linear-gradient(to right, blue 50%, red 50%);
-    background-position:bottom-right;
-    background-size: 140px 2px; 
-    background-repeat: no-repeat;
+  padding: 100px 20px 100px; /* Keep padding as is for inner spacing */
+  margin-top: 30px;          /* Add margin-top to move the entire section down */
+  width: 100%;
+  background-image: url('https://hitechnepal.com/images/portfolio_bg.png');
+  background-color: #f9f9f9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-    
-  }
-  
-  .erp-text p {
-    font-size: 1rem;
-    color: #555;
-    margin: 10px 30px;
-    width: 90%;
+.erp-content {
+  display: flex;            /* Ensures image and text are side by side */
+  margin: 0 120px;          /* Adjust margin to fit the content correctly */
+  width: 90%;
+  gap: 50px;                /* Controls the space between the image and text */
+}
 
-  }.read-more-btn, .contact-btn {
-    display: inline-block;
-    padding: .4rem 1rem;
-    margin: 10px ;
-    border: 2px solid #2d2f91;
-    border-radius: 10rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .15rem;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #2d2f91;
-      border-radius: 10rem;
-      z-index: -2;
-    }
-    &:before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      height: 100%;
-      background-color: white;
-      color: black;
-      transition: all .3s;
-      border-radius: 10rem;
-      z-index: -1;
-    }
-    &:hover {
-      color:black;
-      &:before {
-        width: 100%;
-      }
-    }}
-  
+.erp-image {
+  flex: 1;                  /* Allows the image container to take equal space */
+  padding-right: 20px;
+  padding-top: 40px;
+}
+
+.erp-image .image {
+  width: 100%;              /* Make the image take up the full width of the container */
+  height: auto;             /* Maintain the aspect ratio of the image */
+  border-radius: 8px;
+}
+
+.erp-text {
+  flex: 2;                  /* Gives more space to the text */
+  width: 50%;
+  margin: 0;                /* Remove extra margin */
+}
+
+.erp-text h2 {
+  font-size: 1.8rem;
+  color: black;
+  margin: 30px 0;
+  width: 80%;
+  padding-bottom: 30px; /* Adjust this value to increase space */
+  border-bottom: 5px solid transparent;
+  background-image: linear-gradient(to right, blue 50%, red 50%);
+  background-position: bottom left;  /* Keeps the background at the bottom */
+  background-size: 140px 2px;        /* Width of the gradient line, and its height */
+  background-repeat: no-repeat;
+}
+
+
+.erp-text p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+  width: 90%;
+}
+
+.read-more-btn,
+.contact-btn {
+  display: inline-block;
+  padding: .4rem 1rem;
+  margin: 10px 0;
+  border: 2px solid #2d2f91;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.read-more-btn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2d2f91;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.read-more-btn:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.read-more-btn:hover {
+  color: black;
+}
+
+.read-more-btn:hover:before {
+  width: 100%;
+}

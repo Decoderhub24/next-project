@@ -1,5 +1,6 @@
 
 import Navbar from './components/navbar';
+import Slidebar from './components/slidebar';
 import Hero from './components/hero';
 import Tabsection from './components/tabsection';
 import Middlesection from './components/middlesection';
@@ -15,7 +16,7 @@ export default function Home() {
     <div className={Style.pageContainer}>
       <Navbar />
       {/* <About/> */}
-      <Hero />
+      <Slidebar />
       <Tabsection />
       <Middlesection /> 
       <Footer />

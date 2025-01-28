@@ -1,0 +1,99 @@
+.imagesection{
+    background-image: url("https://hitechnepal.com/images/headway-5QgIuuBxKwM-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    height: 50vh;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    }
+    .text{
+        position: absolute;
+        color: white;
+        z-index: 2;
+        top: 25%;
+        left: 40%;
+    }
+    .text h1{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .text h2,.text span{
+        text-align: center;
+        font-size: 17px;
+    }
+
+  .ourClientsSection {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    color:black;
+  }
+  
+  .clientGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+  }
+  
+  .clientCard {
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    color: black;
+    width: 300px;
+    
+
+  }
+  
+  .clientCard:hover {
+   border:1px solid #dc3545;
+  }
+  
+  .clientLogo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .clientName {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  .clientbtn{
+    margin-top: 5%;
+  }
+  .clientbtn a{
+    background-color: #2d2f91;
+    padding: 14px 24px;
+    color: #fff;
+    font-weight: 600;
+    border: 2px dotted;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 225px;
+    text-decoration: none;
+    transition: all 400ms ease;
+    cursor: pointer;
+  }
+
+  .clientbtn a:hover{
+    background-color: #dc3545;
+  }
+ 

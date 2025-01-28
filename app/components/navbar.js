@@ -35,7 +35,7 @@ function Navbar() {
               Hospitality Solutions <span className={styles.downArrow}>▼</span>
             </li>
           </Link>
-          <Link href="/ourclients" passHref>
+          <Link href="/our-clients" passHref>
             <li className={styles.navItem}>Our Clients</li>
           </Link>
           <Link href="/career" passHref>

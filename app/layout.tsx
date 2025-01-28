@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Head from "next/head"; // Import Head component from Next.js
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +25,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        {/* Font Awesome CDN link */}
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha384-3yG6hb3Lk3rTo3OB0Mz31gbsyl50Jg1vM9CNSfwn+hEIzj5YHeYvbU5lXL6k8sM7a"
+          crossOrigin="anonymous"
+        />
+      </Head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

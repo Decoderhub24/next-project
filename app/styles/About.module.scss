@@ -1,14 +1,11 @@
-.aboutpage{
-    font-family: Arial, sans-serif;
-    margin-top: 7%;
-}
+
   .imagesection{
     background-image: url("https://hitechnepal.com/images/austin-distel-wD1LRb9OeEo-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     opacity: 0.5;
     z-index: 1;
@@ -28,6 +25,543 @@
         text-align: center;
         font-size: 17px;
     }
+
+      .contentSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        background-color: white;
+      }
+      
+      .leftContent {
+        width: 50%;
+      }
+      
+      .leftContent h2 {
+        font-size: 2rem;
+        color: black;
+        line-height: 1.2;
+        margin-bottom: 3rem;
+      }
+      
+      .leftContent span {
+        color: #2d2f91;
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      
+      .leftContent p {
+        font-size: 1.2rem;
+        color: black;
+        line-height: 1.7;
+        width: 100%;
+      }
+      
+      .rightImages {
+        width: 45%;
+        display: flex;
+        gap: 15px;
+      }
+      
+      .leftImages {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 50%;
+      }
+      
+      .largeImage {
+        width: 50%;
+      }
+      
+      .imageCard {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        background-color: #313131;
+        cursor: pointer;
+        
+      }
+      .imageCard::after{
+        content: "";
+    z-index: 1;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: -1.5rem;
+    right: -1.5rem;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #43baff;
+    
+      }
+      .imageCard img {
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+        
+      }
+      .imageCard img:hover {
+        opacity: 1;
+      }
+      .imageCard2 img:hover {
+        opacity: 1;
+      }
+      
+      .imageCard2 {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        background-color: #313131;
+        margin: 50px 0;
+        cursor: pointer;
+      }
+      .imageCard2::after{
+        content: "";
+    z-index: 1;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: -1.7rem;
+    right: -1.5rem;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #43baff;
+    
+      }
+      
+      .imageCard2 img {
+        width: 100%;
+        height: 300px;
+        opacity: 0.5;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      
+/* Who We Are Section */
+.whoWeAre {
+    padding: 150px 5%;
+    display: flex;
+    justify-content: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 248, 252, 0.8)), to(rgba(244, 248, 252, 0.8))), url(https://hitechnepal.com/images/testimonial-2.png);
+    background: linear-gradient(to bottom, rgba(244, 248, 252, 0.8), rgba(244, 248, 252, 0.8)), url(https://hitechnepal.com/images/testimonial-2.png);
+    
+  }
+  
+  /* Wrapper for Content */
+  .contentWrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1300px;
+    width: 100%;
+  }
+  
+  /* Left Image Section */
+  .imageContainer {
+    flex: 1;
+    color: #1e1e1e;
+    
+    h1{
+       text-align: left; 
+       background-color: #2d2f91;
+       padding: 10px;
+       width: 120px;
+       color: white;
+       font-size: 1.3rem;
+       font-weight: bold;
+       margin-bottom: 10px;
+    }
+   
+    h2 {
+        text-align: left;
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+      }
+      h2 span {
+        color:#2d2f91;
+        font-weight: bold;
+        font-size: 3rem;
+
+      }
+    img {
+      width: 100%;
+      height: 60%;
+      margin-bottom:30px ;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  /* Right Text Section */
+  .textContainer {
+    flex: 1;
+    margin-top: 100px;
+
+    p {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+  }
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .contentWrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+
+  .additionalContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    background-color: white;
+    width: 100%;
+  
+  }
+  
+  .imageTextItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px ;
+    width: 200px;
+
+  }
+  
+  .imageTextItem img {
+    width: 50px;
+    height: auto;
+    border-radius: 8px;
+   
+  }
+  
+  .imageTextItem p {
+    width: 60px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    width: 200px;
+  }
+
+//   our Strength section
+.strengthSection {
+    background: #f5f5f5;
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Wrapper for Content */
+  .strengthWrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Left Text Section */
+  .strengthText {
+    flex: 1;
+    h2 {
+      font-size: 2.5rem;
+      color: #1e1e1e;
+      margin-bottom: 15px;
+    }
+    h2 span {
+        color:#2d2f91;
+    }
+   
+  }
+    .strengthText ul {
+        list-style-type: none; 
+        padding-left: 0;
+      }
+      
+      .strengthText li {
+        position: relative;
+        padding-left: 30px;
+        font-size: 1.1rem;
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+    
+  
+      .strengthText li::before {
+        content: "\f061"; 
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900; 
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%); 
+        font-size: 1.2rem;
+        color: #1b1a1c;
+      }
+ /* Right Image Section */
+.strengthImageWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure the background image overlaps correctly */
+  }
+  
+  /* Background image behind the right-side image */
+  .strengthImageWrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('https://hitechnepal.com/images/about-img-cover.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1; /* Place the background image behind the content */
+  }
+  
+  /* Rounded Triangular Image */
+  .strengthImage {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Ensure the image stays on top */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .strengthWrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .strengthImage {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+
+
+/* Goals & Objectives Section */
+.goalsSection {
+    background-image: url('https://hitechnepal.com/images/portfolio_bg.png');
+    background-size: cover; 
+    background-position: center; 
+    padding: 50px 20px; 
+    color: #fff; 
+    text-align: center; 
+    
+    background-color: white;
+    height: 120vh;
+  }
+  .goalshead{
+    margin-left: 100px;
+  }
+  
+  .goalshead h2 {
+    font-size: 2.5rem;
+    color:#2d2f91;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 3.5rem;
+  }
+  .goalshead h1 {
+    font-size: 2.5rem;
+    color: black;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+  
+  .goalshead p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    color: black;
+    text-align: left;
+    width: 500px;
+  }
+  
+  .goalsContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .goalsImage {
+    z-index: 2;
+    position: relative;
+    max-width: 60rem;
+    margin-top: -10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+}
+.goalsImage img{
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.goalsContent{
+    margin-top: 10%;
+}
+
+.leftcontent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    
+}
+.rightcontent{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        width: 40%;
+        
+    
+}
+.item{
+    display: flex;
+    gap: 40px;
+
+    
+}
+.item::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    width: 12rem;
+    height: 5px;
+    background-color: #1b1a1c;
+}
+.item p{
+    color: black;
+
+}
+.icon{
+    height: 50px;
+    width: 50px;
    
 
+}
+
+// our solution and services
+//   our Strength section
+.servicesSection {
+    background: #f5f5f5;
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Wrapper for Content */
+  .servicesWrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Left Text Section */
+  .servicesText {
+    flex: 1;
+    h2 {
+      font-size: 2.5rem;
+      color: #1e1e1e;
+      margin-bottom: 15px;
+    }
+    h2 span {
+        color:#2d2f91;
+    }
+   
+  }
+    .servicesText ul {
+        list-style-type: none; 
+        padding-left: 0;
+      }
+      
+      .servicesText li {
+        position: relative;
+        padding-left: 30px;
+        font-size: 1.1rem;
+        color: #333;
+        line-height: 1.8;
+       
+      }
+    
+  
+      .servicesText li::before {
+        content: "\f061"; 
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900; 
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%); 
+        font-size: 1.2rem;
+        color: #1b1a1c;
+      }
+ /* Right Image Section */
+.servicesImageWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    
+    
+  }
+  .servicesImageWrapper img{
+    width: 500px;
+    height: 400px;
+    
+  }
+ 
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .servicesWrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .servicesImage {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
   

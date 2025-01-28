@@ -1,8 +1,10 @@
 import React from "react";
-import Navbar from './components/navbar';
-import Subscribe from './components/subscribe';
-import Footerlast from './components/footerlast';
-import styles from "./styles/About.module.scss"; 
+import Navbar from '../components/navbar';
+import Subscribe from '../components/subscribe';
+import Footerlast from '../components/footerlast';
+
+import styles from '../styles/About.module.scss';
+
 
 const About = () => {
   return (

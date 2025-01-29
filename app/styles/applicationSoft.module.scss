@@ -1,0 +1,100 @@
+.container {
+    background-color: white;
+    padding: 40px 0;
+  
+    .first-div,
+    .second-div {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+  
+      @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 0;
+      }
+    }
+  
+    .first-div {
+      .blue-card {
+        position: relative;
+        background-color: #3b82f6; // Blue color
+        color: white;
+        padding: 24px;
+        border-radius: 12px;
+        flex: 1;
+  
+        .image-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-image: url('https://hitechnepal.com/images/discussing-mobile-app.jpg');
+          background-size: cover;
+          background-position: center;
+          z-index: 1;
+        }
+  
+        .content {
+          position: relative;
+          z-index: 10;
+  
+          h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+          }
+  
+          p {
+            margin-top: 16px;
+          }
+        }
+      }
+  
+      .aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+  
+        .heading-container {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+  
+          h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+          }
+        }
+  
+        p {
+          margin-top: 16px;
+          color: #4b5563; // Dark gray
+        }
+      }
+    }
+  
+    .second-div {
+      .left-side {
+        flex: 1;
+  
+        p {
+          font-size: 1.125rem;
+          color: #2d3748; // Darker gray
+        }
+      }
+  
+      .right-side {
+        flex: 1;
+  
+        .image {
+          background-image: url('https://hitechnepal.com/images/6661.svg');
+          background-size: cover;
+          background-position: center;
+          height: 300px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  

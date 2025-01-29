@@ -238,7 +238,8 @@ const MiddleSection = () => {
         {/* Left Section */}
         <div className={productstyles.leftSection}>
           <h1 className={productstyles.title}>
-            Our <h2>Products</h2>
+            Our <b style={{ color: "darkblue" }}>Products</b>
+
           </h1>
           <div className={productstyles.borderBottom}></div>
         </div>

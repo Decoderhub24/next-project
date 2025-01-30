@@ -87,6 +87,7 @@
   opacity: 0; /* Initially hidden */
   transform: translateY(-10px); /* Start slightly above */
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade-in and drop effect */
+  
 }
 
 .navItem:hover .dropdownMenu {
@@ -97,11 +98,12 @@
 
 .dropdownMenu li {
   padding: 10px;
+  color: black;
   transition: background 0.3s;
 }
 
 .dropdownMenu li:hover {
-  background-color: #f0f0f0;
+  color:#00009b;
 }
 
 

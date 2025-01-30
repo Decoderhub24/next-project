@@ -79,7 +79,9 @@ const ContactUS = () => {
 
 
       <div className={styles.contactContainer}>
+      <h2 className={styles.contacthead}>you can send your queries using the from below</h2>
       <h2 className={styles.contactTitle}>Get In Touch</h2>
+      <div className={styles.borderbtn}></div>
       <form className={styles.contactForm}>
         <div className={styles.contactGrid}>
           <div className={styles.inputGroup}>

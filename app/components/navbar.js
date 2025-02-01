@@ -9,6 +9,7 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 function Navbar() {
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [showHospitalityDropdown, setShowHospitalityDropdown] = useState(false);
+  const [showProductsDropdown, setShowProductsDropdown] = useState(false);
 
   return (
 
@@ -30,11 +31,95 @@ function Navbar() {
           <li className={styles.navItem}>
             <Link href="/about" passHref>About Us</Link>
           </li>
-          <li className={styles.navItem}>
-            <Link href="/products" passHref>
-              Products <FontAwesomeIcon icon={faAngleDown} className={styles.downArrow} />
-            </Link>
-          </li>
+          <li className={styles.navItem}
+    onMouseEnter={() => setShowProductsDropdown(true)}
+    onMouseLeave={() => setShowProductsDropdown(false)}
+>
+  <Link href="/Products" passHref>
+    Products <FontAwesomeIcon icon={faAngleDown} className={styles.downArrow} />
+  </Link>
+  
+  {showProductsDropdown && (
+    <div 
+      style={{
+        position: "absolute",
+        left: 0,
+        top: "100%",
+        background: "white",
+        display: "flex",
+       
+        border: "1px solid #ddd",
+       
+       
+        width:"550px"
+      }}
+    >
+      <ul className={styles.dropdownMenu}
+        style={{
+          display: "flex",
+          gap: "40px",
+          width:"100%"  
+        }}
+      >
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <Link href="/products/ims-hitech-erp" style={{ display: "flex"}}>
+          <img
+          src="https://hitechnepal.com/images/product-icons/007-hospital.svg"
+          className={styles.producticon}
+        /> 
+          <li > IMS - Hitech ERP</li></Link>
+          <hr />
+          <Link href="/products/my-swostik-online" style={{ display: "flex"}}>
+          <img
+          src="https://hitechnepal.com/images/product-icons/001-accounting.svg"
+          className={styles.producticon}
+        /> <li>My Swastik Online - Cloud Accounting</li></Link>
+          <hr />
+          <Link href="/products/accounting-software" style={{ display: "flex"}}>
+          <img
+          src="https://hitechnepal.com/images/product-icons/006-restaurant.svg"
+          className={styles.producticon}
+        /> 
+          <li >Swastik Bisiness Accounting Software</li></Link>
+          <hr />
+          <Link href="/products/pharmasoft" style={{ display: "flex"}}>
+          <img
+          src="https://hitechnepal.com/images/product-icons/008-clerk.svg"
+          className={styles.producticon}
+        /> 
+           <li>Pharmasoft</li></Link>
+        </div>
+        
+        <div style={{ display: "flex", flexDirection: "column" }}>
+        <Link href="/products/swostik-resturant" style={{ display: "flex"}}>
+        <img
+          src="https://hitechnepal.com/images/prodicon/business-accounting.svg"
+          className={styles.producticon}
+        />
+          <li >Swastik Resturant ERP</li></Link>
+          <hr />
+          <Link href="/products/swostik-pos" style={{ display: "flex"}}>
+          <img
+          src="https://hitechnepal.com/images/product-icons/007-hospital.svg"
+          className={styles.producticon}
+        /> <li>Swastik POS</li></Link>
+          <hr></hr>
+          <Link href="/products/avocare" style={{ display: "flex"}}>
+          <img
+          src="https://hitechnepal.com/images/product-icons/004-vitamin.svg"
+          className={styles.producticon}
+        /> <li >Avocare - Hospital Management Solution</li></Link>
+          <hr />
+          <Link href="/products/gurukul" style={{ display: "flex"}}>
+          <img
+          src="https://hitechnepal.com/images/product-icons/005-school.svg"
+          className={styles.producticon}
+        /> <li>Gurukul - Hitech School Management Software</li></Link>
+        </div>
+      </ul>
+    </div>
+  )}
+</li>
 
           <li
             className={styles.navItem}
@@ -74,10 +159,9 @@ function Navbar() {
         top: "100%",
         background: "white",
         display: "flex",
-        padding: "10px",
-        border: "1px solid #ddd",
        
-        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+        border: "1px solid #ddd",
+        
         width:"550px"
       }}
     >

@@ -6,6 +6,7 @@ import { FaFilePowerpoint } from "react-icons/fa"; // PowerPoint Icon
 import { HiArrowRight } from "react-icons/hi"; // Arrow Icon
 import { FaCheck } from "react-icons/fa"; // Tick Icon
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper as SwiperType } from "swiper/types";
 import { Pagination,Autoplay,Navigation} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,20 +19,21 @@ import Footerlast from '../../components/footerlast';
 
 
 export default function ImsHitechErp() {
-    // Create state to track Swiper instance
-  const [swiperInstance, setSwiperInstance] = useState(null);
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-
-  // Once component mounts, attach buttons to Swiper
-  useEffect(() => {
-    if (swiperInstance && prevRef.current && nextRef.current) {
-      swiperInstance.params.navigation.prevEl = prevRef.current;
-      swiperInstance.params.navigation.nextEl = nextRef.current;
-      swiperInstance.navigation.init();
-      swiperInstance.navigation.update();
-    }
-  }, [swiperInstance]); // Runs when swiperInstance changes
+    const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
+    const prevRef = useRef(null);
+    const nextRef = useRef(null);
+  
+    useEffect(() => {
+      if (swiperInstance && prevRef.current && nextRef.current) {
+        const navigation = swiperInstance.params?.navigation;
+        if (navigation && typeof navigation !== 'boolean') { // Check if navigation is not 'true'
+          navigation.prevEl = prevRef.current;
+          navigation.nextEl = nextRef.current;
+          swiperInstance.navigation.init();
+          swiperInstance.navigation.update();
+        }
+      }
+    }, [swiperInstance]);
   return (
     <>
     <Navbar/>

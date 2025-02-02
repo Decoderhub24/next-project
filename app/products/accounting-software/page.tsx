@@ -349,7 +349,7 @@ export default function ImsHitechErp() {
           <i className="fa fa-code-branch"></i> Swastik Versions
           </h2>
 
-          <p>What’s New in Swastik (Version 9 to 20)</p>
+          <p>Whats New in Swastik (Version 9 to 20)</p>
         </div>
         <div className={swostikstyles.gridContainer}>
           {versions.map((version, index) => (

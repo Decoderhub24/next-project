@@ -78,7 +78,7 @@ export default function ImsHitechErp() {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-  
+
   useEffect(() => {
     if (swiperInstance && prevRef.current && nextRef.current) {
       const navigation = swiperInstance.params?.navigation;
@@ -338,7 +338,7 @@ export default function ImsHitechErp() {
       <div className={swostikstyles.swastikSection}>
         <div className={swostikstyles.header}>
           <h2>
-            <i class="fa fa-code-branch"></i> Swastik Versions
+             <i className="fa fa-code-branch"></i> Swastik Versions
           </h2>
 
           <p>What’s New in Swastik (Version 9 to 20)</p>

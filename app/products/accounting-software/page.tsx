@@ -70,9 +70,9 @@ export default function ImsHitechErp() {
     { title: "New Features in Version 20" },
   ];
 
-  const [swiperInstance, setSwiperInstance] = useState(null);
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
+  const [swiperInstance, setSwiperInstance] = useState<SwiperInstance | null>(null);
+  const prevRef = useRef<HTMLDivElement | null>(null);
+  const nextRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (swiperInstance && prevRef.current && nextRef.current) {

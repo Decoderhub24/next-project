@@ -82,13 +82,16 @@ export default function ImsHitechErp() {
 
   useEffect(() => {
     if (swiperInstance && prevRef.current && nextRef.current) {
-
-      swiperInstance.params.navigation.prevEl = prevRef.current;
-      swiperInstance.params.navigation.nextEl = nextRef.current;
-      swiperInstance.navigation.init();
-      swiperInstance.navigation.update();
+      const navigation = swiperInstance.params?.navigation;
+      if (navigation) {
+        navigation.prevEl = prevRef.current;
+        navigation.nextEl = nextRef.current;
+        swiperInstance.navigation.init();
+        swiperInstance.navigation.update();
+      }
     }
-  }, [swiperInstance]);
+  }, [swiperInstance]); // Dependency array properly closed
+  
   
   return (
     <>

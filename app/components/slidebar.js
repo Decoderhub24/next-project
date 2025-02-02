@@ -45,12 +45,14 @@ const CustomSlider = () => {
   }, [clicked]); // Dependency on clicked, so it resets after user interaction
 
   return (
-    <div className="relative group">
+    <div className="relative group" style={{
+      height: '100vh',
+    }}>
       {/* Slider Container */}
       <div
         className="relative bg-cover bg-center overflow-hidden transition-all duration-1000 ease-in-out"
         style={{
-          height: '700px',
+          height: '100%',
         }}
       >
         {/* Slide Wrapper */}
@@ -66,6 +68,7 @@ const CustomSlider = () => {
               className="flex-shrink-0 w-full h-full relative bg-cover bg-center zoom-background"
               style={{
                 backgroundImage: `url(${slide.background})`,
+                height:'100%',
                 backgroundSize: '100%',
                 backgroundPosition: 'center',
                 position: 'relative',

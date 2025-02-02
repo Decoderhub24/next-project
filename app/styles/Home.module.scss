@@ -154,7 +154,10 @@
   justify-content: space-around;
   background-color: white;
   position: absolute;
-  top: 100%;
+  top: -30px;  // Adjust to move it upwards
+  left: 45%;
+  transform: translateX(-50%);
+  z-index: 10;
   margin-bottom: 2rem; 
   border-bottom-left-radius: 20px; 
   border-bottom-right-radius: 20px; 
@@ -200,6 +203,7 @@
   color: black; 
   font-size: 1rem;
   font-weight: bold;
+
 }
 
 .activeLabel {

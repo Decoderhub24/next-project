@@ -56,23 +56,23 @@
 }
 
 .read-more-btn,
-.contact-btn {
-  display: inline-block;
-  padding: .4rem 1rem;
-  margin: 10px 0;
-  border: 2px solid #2d2f91;
-  border-radius: 10rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: .15rem;
-  transition: all .3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.read-more-btn:after {
+.contact-btn {display: inline-block;
+font-family: "Spartan", sans-serif;
+font-size: 1rem;
+font-weight: 700;
+position: relative;
+display: inline-block;
+padding: .5rem 1.2rem;
+border: 2px solid #2d2f91;
+border-radius: 10rem;
+color: #fff;
+text-transform: uppercase;
+letter-spacing: .15rem;
+transition: all .3s;
+position: relative;
+overflow: hidden;
+z-index: 1;
+&:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -83,8 +83,7 @@
   border-radius: 10rem;
   z-index: -2;
 }
-
-.read-more-btn:before {
+&:before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -97,11 +96,10 @@
   border-radius: 10rem;
   z-index: -1;
 }
+&:hover {
+  color:black;
+  &:before {
+    width: 100%;
+  }
+}}
 
-.read-more-btn:hover {
-  color: black;
-}
-
-.read-more-btn:hover:before {
-  width: 100%;
-}

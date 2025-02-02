@@ -17,7 +17,9 @@ export default function Home() {
       <Navbar />
       {/* <About/> */}
       <Slidebar />
-      <Tabsection />
+      <div className={Style.overlappingContainer}>
+        <Tabsection />
+      </div>
       <Middlesection /> 
       <Footer />
       <FooterSecond /> 

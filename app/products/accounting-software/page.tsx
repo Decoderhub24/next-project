@@ -9,6 +9,7 @@ import { FaFilePowerpoint } from "react-icons/fa"; // PowerPoint Icon
 import { HiArrowRight } from "react-icons/hi"; // Arrow Icon
 import { FaCheck } from "react-icons/fa"; // Tick Icon
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper as SwiperType } from "swiper/types";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -75,12 +76,13 @@ export default function ImsHitechErp() {
     { title: "New Features in Version 20" },
   ];
 
-  const [swiperInstance, setSwiperInstance] = useState(null);
+  const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   useEffect(() => {
     if (swiperInstance && prevRef.current && nextRef.current) {
+
       swiperInstance.params.navigation.prevEl = prevRef.current;
       swiperInstance.params.navigation.nextEl = nextRef.current;
       swiperInstance.navigation.init();

@@ -75,12 +75,10 @@ export default function ImsHitechErp() {
     { title: "New Features in Version 20" },
   ];
 
-  // Create state to track Swiper instance
   const [swiperInstance, setSwiperInstance] = useState(null);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
-  // Once component mounts, attach buttons to Swiper
   useEffect(() => {
     if (swiperInstance && prevRef.current && nextRef.current) {
       swiperInstance.params.navigation.prevEl = prevRef.current;
@@ -88,7 +86,8 @@ export default function ImsHitechErp() {
       swiperInstance.navigation.init();
       swiperInstance.navigation.update();
     }
-  }, [swiperInstance]); // Runs when swiperInstance changes
+  }, [swiperInstance]);
+  
   return (
     <>
       <Navbar />
@@ -367,17 +366,12 @@ export default function ImsHitechErp() {
       {/* Our Reviews Section */}
       <div className={styles.ourReviews}>
         <h2>Our Reviews</h2>
-        <Swiper
-          slidesPerView={2}
-          spaceBetween={60}
-          pagination={{
-            clickable: true,
-            dynamicBullets: false,
-          }}
-          autoplay={{ delay: 5000, disableOnInteraction: false }} // Auto-slide every 10 seconds
-          modules={[Pagination, Autoplay]} // Import Autoplay
-          className={styles.reviewsSwiper}
-        >
+        <Swiper 
+        slidesPerView={2} 
+        spaceBetween={60} 
+        pagination={{ clickable: true }} autoplay={{ delay: 5000 }} 
+        modules={[Pagination, Autoplay]}>
+         
           {[
             {
               name: "Saurav KC",

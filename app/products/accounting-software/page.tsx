@@ -346,7 +346,7 @@ export default function ImsHitechErp() {
       <div className={swostikstyles.swastikSection}>
         <div className={swostikstyles.header}>
           <h2>
-            <i class="fa fa-code-branch"></i> Swastik Versions
+          <i className="fa fa-code-branch"></i> Swastik Versions
           </h2>
 
           <p>What’s New in Swastik (Version 9 to 20)</p>

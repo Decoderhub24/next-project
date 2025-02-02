@@ -15,6 +15,29 @@
     z-index: 1;
     }
 
+    .customizeimagesection{
+        background-image: url("https://hitechnepal.com/images/chris-ried-ieic5Tq8YMk-unsplash.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+        height: 80vh;
+        width: 100%;
+        opacity: 0.5;
+        z-index: 1;
+        }
+
+        .ecommerceimagesection{
+            background-image: url(https://hitechnepal.com/images/working-macbook-computer-keyboard-34577.jpg);
+            background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+        height: 80vh;
+        width: 100%;
+        opacity: 0.5;
+        z-index: 1;
+        }
     .text{
         position: absolute;
         color: white;

@@ -1,5 +1,5 @@
 "use client";
-import React, { use, useState } from "react";
+import React, {  useState } from "react";
 import Navbar from "@/app/components/navbar";
 import ChallangeSection from "../../services/challangeSection";
 import Footerlast from "@/app/components/footerlast";
@@ -9,8 +9,6 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import "./hotel-management-system.css";
 
 const Hospitality = () => {
- 
-
   const cards = [
     {
       id: 1,
@@ -19,7 +17,7 @@ const Hospitality = () => {
         "An innovatory property management system, eZee FrontDesk helps hotels and hotel chains to run their business operations conveniently and productively. Devised and developed with latest technology, this PMS satisfies the international hospitality norms regardless of the type and size of your property.",
       content2:
         "Carrying a user-friendly user interface, the software brings together every single aspect of property management under a single interface and overcome the frontdesk task hassles. Despite being an extremely powerful and foolproof property management software that combines extraordinary features, it does not burn a hole in your pocket and carries a surprisingly non-premium price tag.",
-      content3: "JUST. DON’T. MISS. IT.",
+      content3: "JUST. DONT. MISS. IT.",
       content4:
         "Whether it is front-desk and reservation module, or the housekeeping one, the travel desk, or the back-office interface; every component of eZee FrontDesk has been built and designed keeping in mind the rigorous terms of property management. eZee FrontDesk has been widely recognized as a software that meets the requirements of even the most demanding of international properties.",
       image: "https://hitechnepal.com/images/hotel_software.jpg",

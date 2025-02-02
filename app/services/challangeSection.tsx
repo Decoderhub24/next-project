@@ -10,7 +10,7 @@ const ChallangeSection = () => {
                     <h1 className={Style.heading}>
                         Got A New <strong>Challange</strong> For Us?
                     </h1>
-                    <p>Let's work together and create the next big thing</p>
+                    <p>Let &amp; s work together and create the next big thing</p>
                     <button className={Style.btnCh}>
                         Kick Start Your Project
                         <FontAwesomeIcon icon={faArrowRightLong} style={{ marginLeft: "4px", color: "#ffffff" }} />

@@ -5,7 +5,7 @@ import imgstyles from "../../styles/pathSection.module.scss";
 import ChallangeSection from "../challangeSection";
 import styles from '../application.module.scss';
 import { FaCheck } from "react-icons/fa"; 
-import appSoft from '@/app/styles/applicationSoft.module.scss';
+
 
 const ApplicationSoft = () => {
     const expertiseData = [

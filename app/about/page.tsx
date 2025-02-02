@@ -23,9 +23,9 @@ const About = () => {
         <div className={styles.leftContent}>
           <h2>We Are The Right Solution <br /> <span>For Your Business</span></h2>
           <p>
-            HiTech Solutions & Services is one of the premier business solution providers in Nepal, 
+            HiTech Solutions &amp; Services is one of the premier business solution providers in Nepal, 
             serving its valued clients since 1998. We have our support and marketing offices scattered 
-            not only in Kathmandu but almost all over Nepal. For today's demanding business environment, 
+            not only in Kathmandu but almost all over Nepal. For todays demanding business environment, 
             we are committed to delivering quality products, services, and solutions that enrich businesses 
             and the lives around them.
           </p>
@@ -153,7 +153,7 @@ const About = () => {
           <div className={styles.strengthText}>
             <h2>Our <span>Strength</span></h2>
             <ul>
-              <li>Nepal’s No.1 Business Solution   Provider  Company</li>
+              <li>Nepals No.1 Business Solution   Provider  Company</li>
               <li>More than 15 years Experience in IT Products Services</li>
               <li>Management is self involved in business and very good personal relation with all the banks and promoters of    Banks</li>
               <li>More than 1500 Satisfied Clients all over  Nepal</li>

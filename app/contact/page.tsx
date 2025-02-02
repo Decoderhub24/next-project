@@ -1,5 +1,4 @@
 import React from "react";
-import ReCAPTCHA from "react-google-recaptcha";
 import Navbar from '@/app/components/navbar';
 import Footerlast from '@/app/components/footerlast';
 import styles from '../styles/contact.module.scss';
@@ -70,7 +69,7 @@ const ContactUS = () => {
             width="100%"
             height="400"
             style={{ border: 0 }}
-            allowFullScreen=""
+            
             loading="lazy"
             title="Location Map"
           />

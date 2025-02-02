@@ -62,7 +62,7 @@ const CustomSlider = () => {
             transform: `translateX(-${currentSlide * 100}%)`,
           }}
         >
-          {slides.map((slide, index) => (
+          {slides.map((slide) => (
             <div
               key={slide.id}
               className="flex-shrink-0 w-full h-full relative bg-cover bg-center zoom-background"

@@ -48,7 +48,7 @@ const FooterSection = () => {
     className={styles.icon}
   />
           <h2>Have a project in mind?</h2>
-          <h1>Let's get to work.</h1>
+          <h1>Let&apos;s get to work.</h1>
           <p>Find out how it works and ask any questions you may have.</p>
           <a href="#" className={styles.link}>
             GET IN TOUCH →

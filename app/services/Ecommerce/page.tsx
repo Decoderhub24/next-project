@@ -4,7 +4,7 @@ import Footerlast from '@/app/components/footerlast';
 import imgstyles from "../../styles/pathSection.module.scss"
 import ChallangeSection from "../challangeSection";
 import styles from '../application.module.scss';
-import appSoft from '@/app/styles/applicationSoft.module.scss';
+
 
 const ApplicationSoft = () => {
   return (

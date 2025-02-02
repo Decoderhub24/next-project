@@ -59,20 +59,7 @@ export default function ImsHitechErp() {
     },
   ];
 
-  const versions = [
-    { title: "New Features in Version 9" },
-    { title: "New Features in Version 10" },
-    { title: "New Features in Version 11" },
-    { title: "New Features in Version 12" },
-    { title: "New Features in Version 13" },
-    { title: "New Features in Version 14" },
-    { title: "New Features in Version 15" },
-    { title: "New Features in Version 16" },
-    { title: "New Features in Version 17" },
-    { title: "New Features in Version 18" },
-    { title: "New Features in Version 19" },
-    { title: "New Features in Version 20" },
-  ];
+ 
 
   // Create state to track Swiper instance
   const [swiperInstance, setSwiperInstance] = useState(null);

@@ -37,7 +37,7 @@ function Navbar() {
     onMouseEnter={() => setShowProductsDropdown(true)}
     onMouseLeave={() => setShowProductsDropdown(false)}
 >
-  <Link href="/Products/ims-hitech-erp" passHref>
+  <Link href="/products/ims-hitech-erp" passHref>
     Products <FontAwesomeIcon icon={faAngleDown} className={styles.downArrow} />
   </Link>
   

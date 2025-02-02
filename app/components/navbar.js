@@ -177,21 +177,21 @@ function Navbar() {
         <div style={{ display: "flex", flexDirection: "column" }}>
           <Link href="/hospitality/hotel-management-system"><li >eZee FrontDesk-Hotel Management System</li></Link>
           <hr />
-          <Link href="/hospitality/hotel-management-system"><li>eZee Absolute - Hotel Booking software</li></Link>
+          <Link href="/hospitality/hotel-booking"><li>eZee Absolute - Hotel Booking software</li></Link>
           <hr />
-          <Link href="/hospitality/hotel-management-system"><li >eZee Centrix - Channel Manager</li></Link>
+          <Link href="/hospitality/channel-manager"><li >eZee Centrix - Channel Manager</li></Link>
           <hr />
-          <Link href="/hospitality/hotel-management-system"><li>eZee iFeedback - Feedback system</li></Link>
+          <Link href="/hospitality/feedback-system"><li>eZee iFeedback - Feedback system</li></Link>
         </div>
         
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <Link href="/hospitality/hotel-management-system"><li >eZee BurrO! - Resturant Software</li></Link>
+          <Link href="/hospitality/resturant-software"><li >eZee BurrO! - Resturant Software</li></Link>
           <hr />
-          <Link href="/hospitality/hotel-management-system"><li>eZee Reservation - Booking Engine</li></Link>
+          <Link href="/hospitality/booking-engine"><li>eZee Reservation - Booking Engine</li></Link>
           <hr></hr>
-          <Link href="/hospitality/hotel-management-system"><li >eZee iMenu - Resturant Menu Software</li></Link>
+          <Link href="/hospitality/resturant-menu"><li >eZee iMenu - Resturant Menu Software</li></Link>
           <hr />
-          <Link href="/hospitality/hotel-management-system"><li>Appytect - Mobile App Builder</li></Link>
+          <Link href="/hospitality/mobile-app"><li>Appytect - Mobile App Builder</li></Link>
         </div>
       </ul>
     </div>

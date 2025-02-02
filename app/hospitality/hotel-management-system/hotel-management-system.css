@@ -164,6 +164,10 @@ color: black;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
+  .right-content .card.active {
+    background-color: #2d2f91; /* Blue color for selected card */
+    color: white;
+  }
   
   
   .card:hover {

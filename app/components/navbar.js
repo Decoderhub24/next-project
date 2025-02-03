@@ -263,8 +263,8 @@ function Navbar() {
        </div>
         
        <ul className={styles.sidebarNav}>
-       <li><Link href="/">Home</Link></li>
-       <li><Link href="/about">About Us</Link></li>
+       <li><Link href="/" className={styles.flexLink}>Home</Link></li>
+       <li><Link href="/about" className={styles.flexLink}>About Us</Link></li>
        {/* Products Dropdown */}
        <li>
        <Link href="">
@@ -330,9 +330,9 @@ function Navbar() {
           )}
     </Link>
   </li>
-  <li><Link href="/our-clients">Our Clients</Link></li>
-  <li><Link href="/career">Career</Link></li>
-  <li><Link href="/contact">Contact Us</Link></li>
+  <li ><Link href="/our-clients" className={styles.flexLink}>Our Clients</Link></li>
+  <li><Link href="/career" className={styles.flexLink}>Career</Link></li>
+  <li><Link href="/contact" className={styles.flexLink}>Contact Us</Link></li>
   <li>
   <button className={styles.SideticketButton}>Open a Ticket</button>
   </li>

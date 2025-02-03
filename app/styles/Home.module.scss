@@ -223,3 +223,185 @@
 .tab:first-child {
   border-bottom-left-radius: 15px; 
 }
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -36%; /* Start off-screen */
+  width: 36%;
+  height: 100%;
+  background-color: rgb(245, 252, 255);
+  background-image:url(https://codiqa.bold-themes.com/product/wp-content/uploads/sites/3/2019/09/bgn-shapes-white.png);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  padding:18px;
+  overflow-y:auto;
+}
+
+.sidebar.visible {
+  right: 0; /* Slide in */
+}
+
+.sidebarHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 34px;
+  font-weight:lighter;
+  cursor: pointer;
+  color:#000000;
+}
+
+.sidebarNav {
+  list-style: none;
+  padding: 20px;
+  margin-top: 20px;
+  height: calc(100vh - 275px); /* Adjust height based on your layout */
+  overflow-y: auto; /* Enable vertical scrollbar */
+}
+
+.sidebarNav li {
+  margin: 15px;
+}
+
+.sidebarNav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+
+/* Flex container for Link text and dropdown icon */
+.flexLink {
+  display: flex;
+  justify-content:space-between;
+  align-items: center; /* Vertically center the icon with the text */
+  gap: 100px; /* Space between text and icon */
+}
+
+.flexLink:hover{
+  color:#ff5c5c;
+}
+
+
+.dropdownIcon {
+  font-size: 30px; 
+  color: #333;
+}
+.dropdownIcon:hover{
+  color:#00009b;
+}
+
+/* Optional: Customize scrollbar */
+.sidebarNav::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.sidebarNav::-webkit-scrollbar-track {
+  background: #bebebe; /* Color of the track */
+}
+
+.sidebarNav::-webkit-scrollbar-thumb {
+  background: #1a1a1a; /* Color of the scrollbar */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.sidebarNav::-webkit-scrollbar-thumb:hover {
+  background: #1b1b1b; /* Color of the scrollbar on hover */
+}
+
+.menuIcon {
+  cursor: pointer;
+  font-size: 34px;
+}
+
+/* Overlay Styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Below sidebar but above everything else */
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.SideticketButton {
+
+  padding: 12px 12px; /* Increased height */
+  background-color: #2a2f98;
+  color: #fff;
+  border: none;
+  border-radius: 0px; /* Removed rounded corners */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.SideticketButton:hover {
+  background-color: #ffffff;
+  color:#ff3d3d; 
+  font-weight: 500;
+}
+
+
+.pmIcon {
+  font-size: 20px; 
+  color: #ff5c5c;
+
+  margin-right: 10px;
+  
+}
+
+.sideContact {
+  margin: 16px;
+  padding: 5px;
+  font-size:20px;
+  color:#000000;
+  font-weight:bold;
+  
+}
+.spn{
+  display: flex;
+  margin:6px;
+}
+
+
+
+.logoContainers {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  height: 60px;
+  margin-left: 20px;
+}
+
+.logoImages {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.socialIcon{
+  display: flex;
+  
+}
+
+.sIcon{
+  margin: 6px;
+  border:solid #ff3d3d 1px;
+  padding:6px;
+}
+.sI{
+  color: #ff3d3d;
+}

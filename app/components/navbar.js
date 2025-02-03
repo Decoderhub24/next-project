@@ -5,11 +5,29 @@ import Link from "next/link";
 import styles from "../styles/Home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { HiBars3BottomRight } from "react-icons/hi2";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdMail } from "react-icons/md";
+import { FaFacebookF } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaViber } from "react-icons/fa";
+
+
 
 function Navbar() {
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [showHospitalityDropdown, setShowHospitalityDropdown] = useState(false);
   const [showProductsDropdown, setShowProductsDropdown] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarVisible(!isSidebarVisible);
+  };
+
+  const closeSidebar = () => {
+    setIsSidebarVisible(false);
+  };
 
   return (
 
@@ -210,10 +228,75 @@ function Navbar() {
           </li>
         </ul>
         <button className={styles.ticketButton}>Open a Ticket</button>
-        <div className={styles.menuIcon}>
-          <span>☰</span>
+        <div className={styles.menuIcon} onClick={toggleSidebar}>
+          <span><HiBars3BottomRight />          </span>
         </div>
       </nav>
+
+       {/* Overlay */}
+       {isSidebarVisible && (
+        <div className={styles.overlay} onClick={closeSidebar} />
+      )}
+
+       {/* Sidebar */}
+       <div className={`${styles.sidebar} ${isSidebarVisible ? styles.visible : ''}`}>
+        <div className={styles.sidebarHeader}>
+          <button className={styles.closeButton} onClick={toggleSidebar}>
+            <span>✕</span>
+          </button>
+        </div>
+
+        <div className={styles.logoContainers}>
+        <img
+          src="https://hitechnepal.com/images/logo.png"
+          alt="HiTech Logo"
+          className={styles.logoImages}
+        />
+       </div>
+        
+       <ul className={styles.sidebarNav}>
+       <li><Link href="/">Home</Link></li>
+       <li><Link href="/about">About Us</Link></li>
+       <li>
+       <Link href="/products">
+      <span className={styles.flexLink}>
+        Products <RiArrowDropDownLine className={styles.dropdownIcon} />
+      </span>
+    </Link>
+  </li>
+  <li>
+    <Link href="/services">
+      <span className={styles.flexLink}>
+        Services <RiArrowDropDownLine className={styles.dropdownIcon} />
+      </span>
+    </Link>
+  </li>
+  <li>
+    <Link href="/hospitality">
+      <span className={styles.flexLink}>
+        Hospitality Solutions <RiArrowDropDownLine className={styles.dropdownIcon} />
+      </span>
+    </Link>
+  </li>
+  <li><Link href="/our-clients">Our Clients</Link></li>
+  <li><Link href="/career">Career</Link></li>
+  <li><Link href="/contact">Contact Us</Link></li>
+  <li>
+  <button className={styles.SideticketButton}>Open a Ticket</button>
+  </li>
+</ul>
+<div className={styles.sideContact}>
+<span className={styles.spn}><FaPhoneAlt className={styles.pmIcon}/>+977 9803601598</span>
+<span className={styles.spn}><MdMail className={styles.pmIcon} /> info@hitechnepal.com.np </span>
+<div className={styles.socialIcon}>
+  <a href="#" className={styles.sIcon}><FaFacebookF className={styles.sI}/></a>
+  <a href="#" className={styles.sIcon}><FaWhatsapp className={styles.sI}/></a>
+  <a href="#" className={styles.sIcon}><FaViber className={styles.sI}/>  </a>
+</div>
+</div>
+      </div>
+
+      
     </header>
   );
 }

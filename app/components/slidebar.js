@@ -46,7 +46,7 @@ const CustomSlider = () => {
 
   return (
     <div className="relative group" style={{
-      height: '100vh',
+      height: '150vh',
     }}>
       {/* Slider Container */}
       <div

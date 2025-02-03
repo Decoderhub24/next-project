@@ -20,6 +20,7 @@ function Navbar() {
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [showHospitalityDropdown, setShowHospitalityDropdown] = useState(false);
   const [showProductsDropdown, setShowProductsDropdown] = useState(false);
+  
 
   const toggleSidebar = () => {
     setIsSidebarVisible(!isSidebarVisible);
@@ -28,6 +29,13 @@ function Navbar() {
   const closeSidebar = () => {
     setIsSidebarVisible(false);
   };
+  const toggleDropdown = (menu) => {
+    setShowProductsDropdown(showProductsDropdown === menu ? null : menu);
+    setShowServicesDropdown(showServicesDropdown === menu ? null : menu);
+    setShowHospitalityDropdown(showHospitalityDropdown === menu ? null : menu);
+
+  };
+  
 
   return (
 
@@ -257,25 +265,69 @@ function Navbar() {
        <ul className={styles.sidebarNav}>
        <li><Link href="/">Home</Link></li>
        <li><Link href="/about">About Us</Link></li>
+       {/* Products Dropdown */}
        <li>
-       <Link href="/products">
+       <Link href="">
+          <span className={styles.flexLink} >
+            Products <RiArrowDropDownLine className={styles.dropdownIcon } onClick={() => toggleDropdown("products")}/>
+          </span>
+          {showProductsDropdown=== "products" && (
+            <ul className={styles.submenu}>
+          <li > <Link href="/products/ims-hitech-erp">IMS - Hitech ERP</Link></li>
+          <li><Link href="/products/my-swostik-online">My Swastik Online - Cloud Accounting</Link></li>
+          <li > <Link href="/products/accounting-software">Swastik Bisiness Accounting Software</Link></li>
+           <li> <Link href="/products/pharmasoft">Pharmasoft</Link></li>
+          <li ><Link href="/products/swastik-resturant">Swastik Resturant ERP</Link></li>
+          <li><Link href="/products/swostik-pos">Swostik POS</Link></li>
+           <li > <Link href="/products/avocare">Avocare - Hospital Management Solution</Link></li>
+         <li> <Link href="/products/gurukul">Gurukul - Hitech School Management Software</Link></li>
+            </ul>
+          
+          )}
+          </Link>
+        </li>
+  <li>
+    <Link href="">
       <span className={styles.flexLink}>
-        Products <RiArrowDropDownLine className={styles.dropdownIcon} />
+        Services <RiArrowDropDownLine className={styles.dropdownIcon} onClick={() => toggleDropdown("services")}/>
       </span>
+      {showServicesDropdown=== "services" && (
+            <ul className={styles.submenu}>
+          <Link href="/services/applicationSoft"><li>Application Software</li></Link>
+                <Link href="/services/ERP"><li>ERP </li></Link>
+                <Link href="/services/customized"><li>Customized Software</li></Link>
+                <Link href="/services/Ecommerce"><li>E-Commerce</li></Link>
+                
+            </ul>
+          
+          )}
     </Link>
   </li>
   <li>
-    <Link href="/services">
+    <Link href="">
       <span className={styles.flexLink}>
-        Services <RiArrowDropDownLine className={styles.dropdownIcon} />
+        Hospitality Solutions <RiArrowDropDownLine className={styles.dropdownIcon} onClick={() => toggleDropdown("hospitality")} />
       </span>
-    </Link>
-  </li>
-  <li>
-    <Link href="/hospitality">
-      <span className={styles.flexLink}>
-        Hospitality Solutions <RiArrowDropDownLine className={styles.dropdownIcon} />
-      </span>
+      {showHospitalityDropdown=== "hospitality" && (
+            <ul className={styles.submenu}>
+         <li > <Link href="/hospitality/hotel-management-system">eZee FrontDesk-Hotel Management System</Link></li>
+
+          <li><Link href="/hospitality/hotel-booking">eZee Absolute - Hotel Booking software</Link></li>
+
+          <li ><Link href="/hospitality/channel-manager">eZee Centrix - Channel Manager</Link></li>
+
+          <li><Link href="/hospitality/feedback-system">eZee iFeedback - Feedback system</Link></li>
+        
+          <li ><Link href="/hospitality/resturant-software">eZee BurrO! - Resturant Software</Link></li>
+
+          <li><Link href="/hospitality/booking-engine">eZee Reservation - Booking Engine</Link></li>
+      
+         <li > <Link href="/hospitality/resturant-menu">eZee iMenu - Resturant Menu Software</Link></li>
+
+          <li><Link href="/hospitality/mobile-app">Appytect - Mobile App Builder</Link></li>
+            </ul>
+          
+          )}
     </Link>
   </li>
   <li><Link href="/our-clients">Our Clients</Link></li>
